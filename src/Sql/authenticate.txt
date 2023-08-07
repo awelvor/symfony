@@ -1,0 +1,29 @@
+authentication
+
+
+php bin/console make:user
+created: src/Entity/User.php
+created: src/Repository/UserRepository.php
+
+
+php bin/console make:auth
+
+
+
+created: src/Security/CustomAuthenticator.php
+ updated: config/packages/security.yaml
+ created: src/Controller/SecurityController.php
+ created: templates/security/login.html.twig
+
+Success! 
+Next:
+ - Customize your new authenticator.
+ - Finish the redirect "TODO" in the App\Security\CustomAuthenticator::onAuthenticationSuccess() method.
+ - Review & adapt the login template: templates/security/login.html.twig.
+
+
+php bin/console make:controller Register
+created: src/Controller/RegisterController.php
+created: templates/register/index.html.twig
+
+php bin/console make:controller Login

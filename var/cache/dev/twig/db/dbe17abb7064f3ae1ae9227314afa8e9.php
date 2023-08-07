@@ -1,0 +1,524 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* checkout/index.html */
+class __TwigTemplate_ce4a284c343d4cd99b33b334fef490fe extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "checkout/index.html"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "checkout/index.html"));
+
+        // line 1
+        echo "<!doctype html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+    <meta name=\"description\" content=\"\">
+    <meta name=\"author\" content=\"philippe\" >
+    <meta name=\"generator\" content=\"Bluefish 2.2.12\" >
+    <title>Checkout example · Bootstrap v5.2</title>
+
+    <link rel=\"canonical\" href=\"https://getbootstrap.com/docs/5.2/examples/checkout/\">
+
+    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" >
+  </head>
+
+   
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href=\"form-validation.css\" rel=\"stylesheet\">
+  </head>
+  <body class=\"bg-light\">
+    
+<div class=\"container\">
+  <main>
+    <div class=\"py-5 text-center\">
+      <img class=\"d-block mx-auto mb-4\" src=\"../assets/brand/bootstrap-logo.svg\" alt=\"\" width=\"72\" height=\"57\">
+      <h2>Newop form</h2>
+      
+    </div>
+
+    <div class=\"row g-5\">
+      <div class=\"col-md-5 col-lg-4 order-md-last\">
+        <h4 class=\"d-flex justify-content-between align-items-center mb-3\">
+          <span class=\"text-primary\">Your cart</span>
+          <span class=\"badge bg-primary rounded-pill\">3</span>
+        </h4>
+        <ul class=\"list-group mb-3\">
+          <li class=\"list-group-item d-flex justify-content-between lh-sm\">
+            <div>
+              <h6 class=\"my-0\">Product name</h6>
+              <small class=\"text-muted\">Brief description</small>
+            </div>
+            <span class=\"text-muted\">\$12</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between lh-sm\">
+            <div>
+              <h6 class=\"my-0\">Second product</h6>
+              <small class=\"text-muted\">Brief description</small>
+            </div>
+            <span class=\"text-muted\">\$8</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between lh-sm\">
+            <div>
+              <h6 class=\"my-0\">Third item</h6>
+              <small class=\"text-muted\">Brief description</small>
+            </div>
+            <span class=\"text-muted\">\$5</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between bg-light\">
+            <div class=\"text-success\">
+              <h6 class=\"my-0\">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class=\"text-success\">−\$5</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between\">
+            <span>Total (USD)</span>
+            <strong>\$20</strong>
+          </li>
+        </ul>
+
+        <form class=\"card p-2\">
+          <div class=\"input-group\">
+            <input type=\"text\" class=\"form-control\" placeholder=\"Promo code\">
+            <button type=\"submit\" class=\"btn btn-secondary\">Redeem</button>
+          </div>
+        </form>
+      </div>
+      <div class=\"col-md-7 col-lg-6\">
+       
+        <form class=\"needs-validation\" novalidate>
+          <div class=\"row g-3\">
+            <div class=\"col-sm-6\">
+              <label for=\"firstName\" class=\"form-label\">Credit</label>
+              <input type=\"text\" class=\"form-control\" id=\"credit\" placeholder=\"\" value=\"\" required>
+              <div class=\"invalid-feedback\">
+                Valid credit is required.
+              </div>
+            </div>
+
+            <div class=\"col-sm-6\">
+              <label for=\"lastName\" class=\"form-label\">Debit</label>
+              <input type=\"text\" class=\"form-control\" id=\"debit\" placeholder=\"\" value=\"\" required>
+              <div class=\"invalid-feedback\">
+                Valid debit is required.
+              </div>
+            </div>
+
+            <div class=\"col-12\">
+              <label for=\"username\" class=\"form-label\">Libelle</label>
+              <div class=\"input-group has-validation\">
+                
+                <input type=\"text\" class=\"form-control\" id=\"libelle\" placeholder=\"libelle\" required>
+              <div class=\"invalid-feedback\">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+            <div class=\"col-12\">
+              <label for=\"username\" class=\"form-label\">Date</label>
+              <div class=\"input-group has-validation\">
+                
+                <input type=\"text\" class=\"form-control\" id=\"date\" placeholder=\"date\" required>
+              <div class=\"invalid-feedback\">
+                  date is required.
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div class=\"col-12\">
+              <label for=\"address\" class=\"form-label\">Cbid</label>
+              <input type=\"text\" class=\"form-control\" id=\"cbid\" placeholder=\"cbid\"
+              
+            </div>
+
+            
+
+            <div class=\"col-md-5\">
+              <label for=\"country\" class=\"form-label\">Compte</label>
+              <select class=\"form-select\" id=\"compte\" required>
+                <option>cb boursorama</option>
+                <option>ccsg</option>
+                <option>cc boursorama</option>
+                
+                <option>amazon</option>
+                
+                
+                
+              </select>
+              
+            </div>
+
+           
+
+            
+          </div>
+
+          
+
+          <button class=\"w-100 btn btn-primary btn-lg\" type=\"submit\">Valider</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class=\"my-5 pt-5 text-muted text-center text-small\">
+    <p class=\"mb-1\">&copy; 2023 Company Name</p>
+    <ul class=\"list-inline\">
+      <li class=\"list-inline-item\"><a href=\"#\">Privacy</a></li>
+      <li class=\"list-inline-item\"><a href=\"#\">Terms</a></li>
+      <li class=\"list-inline-item\"><a href=\"#\">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+ 
+    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js\"></script>
+  </body>
+
+      <script src=\"form-validation.js\"></script>
+  </body>
+</html>
+";
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return "checkout/index.html";
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  43 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("<!doctype html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+    <meta name=\"description\" content=\"\">
+    <meta name=\"author\" content=\"philippe\" >
+    <meta name=\"generator\" content=\"Bluefish 2.2.12\" >
+    <title>Checkout example · Bootstrap v5.2</title>
+
+    <link rel=\"canonical\" href=\"https://getbootstrap.com/docs/5.2/examples/checkout/\">
+
+    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" >
+  </head>
+
+   
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href=\"form-validation.css\" rel=\"stylesheet\">
+  </head>
+  <body class=\"bg-light\">
+    
+<div class=\"container\">
+  <main>
+    <div class=\"py-5 text-center\">
+      <img class=\"d-block mx-auto mb-4\" src=\"../assets/brand/bootstrap-logo.svg\" alt=\"\" width=\"72\" height=\"57\">
+      <h2>Newop form</h2>
+      
+    </div>
+
+    <div class=\"row g-5\">
+      <div class=\"col-md-5 col-lg-4 order-md-last\">
+        <h4 class=\"d-flex justify-content-between align-items-center mb-3\">
+          <span class=\"text-primary\">Your cart</span>
+          <span class=\"badge bg-primary rounded-pill\">3</span>
+        </h4>
+        <ul class=\"list-group mb-3\">
+          <li class=\"list-group-item d-flex justify-content-between lh-sm\">
+            <div>
+              <h6 class=\"my-0\">Product name</h6>
+              <small class=\"text-muted\">Brief description</small>
+            </div>
+            <span class=\"text-muted\">\$12</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between lh-sm\">
+            <div>
+              <h6 class=\"my-0\">Second product</h6>
+              <small class=\"text-muted\">Brief description</small>
+            </div>
+            <span class=\"text-muted\">\$8</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between lh-sm\">
+            <div>
+              <h6 class=\"my-0\">Third item</h6>
+              <small class=\"text-muted\">Brief description</small>
+            </div>
+            <span class=\"text-muted\">\$5</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between bg-light\">
+            <div class=\"text-success\">
+              <h6 class=\"my-0\">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class=\"text-success\">−\$5</span>
+          </li>
+          <li class=\"list-group-item d-flex justify-content-between\">
+            <span>Total (USD)</span>
+            <strong>\$20</strong>
+          </li>
+        </ul>
+
+        <form class=\"card p-2\">
+          <div class=\"input-group\">
+            <input type=\"text\" class=\"form-control\" placeholder=\"Promo code\">
+            <button type=\"submit\" class=\"btn btn-secondary\">Redeem</button>
+          </div>
+        </form>
+      </div>
+      <div class=\"col-md-7 col-lg-6\">
+       
+        <form class=\"needs-validation\" novalidate>
+          <div class=\"row g-3\">
+            <div class=\"col-sm-6\">
+              <label for=\"firstName\" class=\"form-label\">Credit</label>
+              <input type=\"text\" class=\"form-control\" id=\"credit\" placeholder=\"\" value=\"\" required>
+              <div class=\"invalid-feedback\">
+                Valid credit is required.
+              </div>
+            </div>
+
+            <div class=\"col-sm-6\">
+              <label for=\"lastName\" class=\"form-label\">Debit</label>
+              <input type=\"text\" class=\"form-control\" id=\"debit\" placeholder=\"\" value=\"\" required>
+              <div class=\"invalid-feedback\">
+                Valid debit is required.
+              </div>
+            </div>
+
+            <div class=\"col-12\">
+              <label for=\"username\" class=\"form-label\">Libelle</label>
+              <div class=\"input-group has-validation\">
+                
+                <input type=\"text\" class=\"form-control\" id=\"libelle\" placeholder=\"libelle\" required>
+              <div class=\"invalid-feedback\">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+            <div class=\"col-12\">
+              <label for=\"username\" class=\"form-label\">Date</label>
+              <div class=\"input-group has-validation\">
+                
+                <input type=\"text\" class=\"form-control\" id=\"date\" placeholder=\"date\" required>
+              <div class=\"invalid-feedback\">
+                  date is required.
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div class=\"col-12\">
+              <label for=\"address\" class=\"form-label\">Cbid</label>
+              <input type=\"text\" class=\"form-control\" id=\"cbid\" placeholder=\"cbid\"
+              
+            </div>
+
+            
+
+            <div class=\"col-md-5\">
+              <label for=\"country\" class=\"form-label\">Compte</label>
+              <select class=\"form-select\" id=\"compte\" required>
+                <option>cb boursorama</option>
+                <option>ccsg</option>
+                <option>cc boursorama</option>
+                
+                <option>amazon</option>
+                
+                
+                
+              </select>
+              
+            </div>
+
+           
+
+            
+          </div>
+
+          
+
+          <button class=\"w-100 btn btn-primary btn-lg\" type=\"submit\">Valider</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class=\"my-5 pt-5 text-muted text-center text-small\">
+    <p class=\"mb-1\">&copy; 2023 Company Name</p>
+    <ul class=\"list-inline\">
+      <li class=\"list-inline-item\"><a href=\"#\">Privacy</a></li>
+      <li class=\"list-inline-item\"><a href=\"#\">Terms</a></li>
+      <li class=\"list-inline-item\"><a href=\"#\">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+ 
+    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js\"></script>
+  </body>
+
+      <script src=\"form-validation.js\"></script>
+  </body>
+</html>
+", "checkout/index.html", "/home/philippe/symfony/templates/checkout/index.html");
+    }
+}
