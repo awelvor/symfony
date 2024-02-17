@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twig</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<h1><a href="https://twig.symfony.com/doc/3.x/" target=_blank>TWIG</a></h1>
+<h5>Functions</h5>
+<a href='' target=_blank>absolute_url(path)</a><br>
+<a href='' target=_blank>asset(path, packageName)</a><br>
+<a href='' target=_blank>asset_version(path, packageName)</a><br>
+<a href='' target=_blank>constant(constant, object = null)</a><br>
+<a href='' target=_blank>controller(controller, attributes = [], query = [])</a><br>
+<a href='' target=_blank>csrf_token(tokenId)</a><br>
+<a href='' target=_blank>cycle(values, position)</a><br>
+<a href='https://twig.symfony.com/doc/3.x/filters/date.html' target=_blank>date(date = null, timezone = null)</a><br>
+<a href='' target=_blank>dns_prefetch(uri, attributes)</a><br>
+<a href='' target=_blank>dump()</a><br>
+<a href='' target=_blank>expression(expression)</a><br>
+<a href='' target=_blank>field_choices(view)</a><br>
+<a href='' target=_blank>field_errors(view)</a><br>
+<a href='' target=_blank>field_help(view)</a><br>
+<a href='' target=_blank>field_label(view)</a><br>
+<a href='' target=_blank>field_name(view)</a><br>
+<a href='' target=_blank>field_value(view)</a><br>
+<a href='' target=_blank>form(unknown?)</a><br>
+<a href='' target=_blank>form_end(unknown?)</a><br>
+<a href='' target=_blank>form_errors(unknown?)</a><br>
+<a href='' target=_blank>form_help(unknown?)</a><br>
+<a href='' target=_blank>form_label(unknown?)</a><br>
+<a href='' target=_blank>form_parent(formView)</a><br>
+<a href='' target=_blank>form_rest(unknown?)</a><br>
+<a href='' target=_blank>form_row(unknown?)</a><br>
+<a href='' target=_blank>form_start(unknown?)</a><br>
+<a href='' target=_blank>form_widget(unknown?)</a><br>
+<a href='' target=_blank>fragment_uri(controller, absolute = false, strict = true, sign = true)</a><br>
+<a href='' target=_blank>impersonation_exit_path(exitTo)</a><br>
+<a href='' target=_blank>impersonation_exit_url(exitTo)</a><br>
+<a href='' target=_blank>impersonation_path(identifier)</a><br>
+<a href='' target=_blank>impersonation_url(identifier)</a><br>
+<a href='' target=_blank>importmap(entryPoint = "app", attributes = [])</a><br>
+<a href='' target=_blank>include(template, variables = [], withContext = true, ignoreMissing = false, sandboxed = false)</a><br>
+<a href='' target=_blank>is_granted(role, object, field)</a><br>
+<a href='' target=_blank>link(uri, rel, attributes)</a><br>
+<a href='' target=_blank>logout_path(key)</a><br>
+<a href='' target=_blank>logout_url(key)</a><br>
+<a href='' target=_blank>max(value, values)</a><br>
+<a href='' target=_blank>min(value, values)</a><br>
+<a href='' target=_blank>path(name, parameters, relative)</a><br>
+<a href='' target=_blank>preconnect(uri, attributes)</a><br>
+<a href='' target=_blank>prefetch(uri, attributes)</a><br>
+<a href='' target=_blank>preload(uri, attributes)</a><br>
+<a href='' target=_blank>prerender(uri, attributes)</a><br>
+<a href='' target=_blank>profiler_dump(data, maxDepth)</a><br>
+<a href='' target=_blank>profiler_dump_log(message, context)</a><br>
+<a href='' target=_blank>random(values = null, max = null)</a><br>
+<a href='' target=_blank>range(start, end, step = 1)</a><br>
+<a href='' target=_blank>relative_path(path)</a><br>
+<a href='' target=_blank>render(uri, options = [])</a><br>
+<a href='' target=_blank>render_*(strategy, uri, options = [])</a><br>
+<a href='' target=_blank>source(name, ignoreMissing = false)</a><br>
+<a href='' target=_blank>stimulus_action(controllerName, actionName = null, eventName = null, parameters = [])</a><br>
+<a href='' target=_blank>stimulus_controller(controllerName, controllerValues = [], controllerClasses = [], controllerOutlets = [])</a><br>
+<a href='' target=_blank>stimulus_target(controllerName, targetNames = null)</a><br>
+<a href='' target=_blank>t(message, parameters, domain)</a><br>
+<a href='' target=_blank>turbo_stream_listen(topic, transport = null)</a><br>
+<a href='' target=_blank>url(name, parameters, schemeRelative)</a><br>
+<a href='' target=_blank>ux_controller_link_tags()</a><br>
+<h5>Filters</h5>
+<a href='' target=_blank>abbr_class</a><br>
+<a href='' target=_blank>abbr_method</a><br>
+<a href='' target=_blank>abs</a><br>
+<a href='' target=_blank>batch(size, fill = null, preserveKeys = true)</a><br>
+<a href='' target=_blank>capitalize</a><br>
+<a href='' target=_blank>column(name, index = null)</a><br>
+<a href='' target=_blank>convert_encoding(to, from)</a><br>
+<a href='https://twig.symfony.com/doc/3.x/filters/date.html' target=_blank>date(format = null, timezone = null)</a><br>
+<a href='' target=_blank>date_modify(modifier)</a><br>
+<a href='' target=_blank>default(default = "")</a><br>
+<a href='' target=_blank>doctrine_format_sql(highlight)</a><br>
+<a href='' target=_blank>doctrine_prettify_sql</a><br>
+<a href='' target=_blank>doctrine_pretty_query(highlightOnly = false)</a><br>
+<a href='' target=_blank>doctrine_replace_query_parameters(parameters)</a><br>
+<a href='' target=_blank>e(strategy = "html", charset = null, autoescape = false)</a><br>
+<a href='' target=_blank>escape(strategy = "html", charset = null, autoescape = false)</a><br>
+<a href='' target=_blank>file_excerpt(line, srcContext)</a><br>
+<a href='' target=_blank>file_link(line)</a><br>
+<a href='' target=_blank>file_relative</a><br>
+<a href='' target=_blank>filter(arrow)</a><br>
+<a href='' target=_blank>first</a><br>
+<a href='' target=_blank>form_encode_currency(widget = "")</a><br>
+<a href='https://twig.symfony.com/doc/3.x/filters/number_format.html' target=_blank>format(values)</a><br>
+<a href='' target=_blank>format_args</a><br>
+<a href='' target=_blank>format_args_as_text</a><br>
+<a href='' target=_blank>format_file(line, text)</a><br>
+<a href='' target=_blank>format_file_from_text</a><br>
+<a href='' target=_blank>format_log_message(context)</a><br>
+<a href='' target=_blank>humanize</a><br>
+<a href='' target=_blank>join(glue = "", and = null)</a><br>
+<a href='' target=_blank>json_encode(flags = 0, depth = 512)</a><br>
+<a href='' target=_blank>keys</a><br>
+<a href='' target=_blank>last</a><br>
+<a href='' target=_blank>length</a><br>
+<a href='' target=_blank>lower</a><br>
+<a href='' target=_blank>map(arrow)</a><br>
+<a href='' target=_blank>merge</a><br>
+<a href='' target=_blank>nl2br</a><br>
+<a href='https://twig.symfony.com/doc/3.x/filters/number_format.html' target=_blank>number_format(decimal = null, decimalPoint = null, thousandSep = null)</a><br>
+<a href='' target=_blank>raw</a><br>
+<a href='' target=_blank>reduce(arrow, initial = null)</a><br>
+<a href='' target=_blank>replace(from)</a><br>
+<a href='' target=_blank>reverse(preserveKeys = false)</a><br>
+<a href='' target=_blank>round(precision = 0, method = "common")</a><br>
+<a href='' target=_blank>serialize(format = "json", context = [])</a><br>
+<a href='' target=_blank>slice(start, length = null, preserveKeys = false)</a><br>
+<a href='' target=_blank>sort(arrow = null)</a><br>
+<a href='' target=_blank>spaceless</a><br>
+<a href='' target=_blank>split(delimiter, limit = null)</a><br>
+<a href='' target=_blank>stimulus_action(controllerName, actionName, eventName = null, parameters = [])</a><br>
+<a href='' target=_blank>stimulus_controller(controllerName, controllerValues = [], controllerClasses = [], controllerOutlets = [])</a><br>
+<a href='' target=_blank>stimulus_target(controllerName, targetNames = null)</a><br>
+<a href='' target=_blank>striptags(allowable_tags = null)</a><br>
+<a href='' target=_blank>title</a><br>
+<a href='' target=_blank>trans(arguments, domain, locale, count)</a><br>
+<a href='' target=_blank>trim(characterMask = null, side = "both")</a><br>
+<a href='' target=_blank>upper</a><br>
+<a href='' target=_blank>url_encode</a><br>
+<a href='' target=_blank>yaml_dump(inline, dumpObjects)</a><br>
+<a href='' target=_blank>yaml_encode(inline, dumpObjects)</a><br>
+<h5>Tests</h5>
+<a href='' target=_blank>constant</a><br>
+<a href='' target=_blank>defined</a><br>
+<a href='' target=_blank>divisible by</a><br>
+<a href='' target=_blank>empty</a><br>
+<a href='' target=_blank>even</a><br>
+<a href='' target=_blank>iterable</a><br>
+<a href='' target=_blank>none</a><br>
+<a href='' target=_blank>null</a><br>
+<a href='' target=_blank>odd</a><br>
+<a href='' target=_blank>rootform</a><br>
+<a href='' target=_blank>same as</a><br>
+<a href='' target=_blank>selectedchoice</a><br>
+<h5>Globals</h5>
+<a href='' target=_blank>app = object(Symfony\Bridge\Twig\AppVariable)</a><br>
+<h5>Loader Paths</h5>
+<a href='' target=_blank>@Doctrine              vendor/doctrine/doctrine-bundle/Resources/views/             </a><br>
+<a href='' target=_blank>@!Doctrine             vendor/doctrine/doctrine-bundle/Resources/views/             </a><br>
+<a href='' target=_blank>@DoctrineMigrations    vendor/doctrine/doctrine-migrations-bundle/Resources/views/  </a><br>
+<a href='' target=_blank>@!DoctrineMigrations   vendor/doctrine/doctrine-migrations-bundle/Resources/views/  </a><br>
+<a href='' target=_blank>@Debug                 vendor/symfony/debug-bundle/Resources/views/                 </a><br>
+<a href='' target=_blank>@!Debug                vendor/symfony/debug-bundle/Resources/views/                 </a><br>
+<a href='' target=_blank>@WebProfiler           vendor/symfony/web-profiler-bundle/Resources/views/          </a><br>
+<a href='' target=_blank>@!WebProfiler          vendor/symfony/web-profiler-bundle/Resources/views/          </a><br>
+<a href='' target=_blank>@Security              vendor/symfony/security-bundle/Resources/views/              </a><br>
+<a href='' target=_blank>@!Security             vendor/symfony/security-bundle/Resources/views/              </a><br>
+<a href='' target=_blank></a><br>
+<a href='' target=_blank>(None)                 templates/                                                   </a><br>
+<a href='' target=_blank>vendor/symfony/twig-bridge/Resources/views/Form/             </a><br>
+<a href='' target=_blank></a><br>
+<a href='' target=_blank>@email                 vendor/symfony/twig-bridge/Resources/views/Email/            </a><br>
+<a href='' target=_blank>@!email                vendor/symfony/twig-bridge/Resources/views/Email/            </a><br>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
