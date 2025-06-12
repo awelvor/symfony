@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Form;
+
+use App\Entity\Euros;
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
+
+class EurosForm extends AbstractType
+{
+    public function buildForm(FormBuilderInterface $builder, array $options): void
+    {
+        $builder
+       ->add('compte', ChoiceType::class, ['choices' => [
+        'ccsg'            => 'ccsg',
+        'cvi philippe'    => 'cvi philippe',
+        'cvi nicole'      => 'cvi nicole',
+        'livretA philippe'=> 'livretA philippe',
+        'cc boursorama'   => 'cc boursorama',
+        'cb boursorama'   => 'cb boursorama',
+          ]])           
+       ->add('date',TextType::class, ['attr'=>['placeholder'=>date('Y-m-d')]])
+       ->add('libelle')
+       ->add('credit',TextType::class, ['attr'=>['placeholder'=>'0.0']])
+       ->add('debit', TextType::class, ['attr'=>['placeholder'=>'0.0']])
+       ->add('cbid')
+       ->add('save',SubmitType::class,['label'=>'Envoyer'])
+        ;
+    }
+
+    public function configureOptions(OptionsResolver $resolver): void
+    {
+        $resolver->setDefaults([
+            'data_class' => Euros::class,
+        ]);
+    }
+}
