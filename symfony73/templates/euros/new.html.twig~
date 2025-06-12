@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Euros{% endblock %}
+
+{% block body %}
+    
+
+   <h2>Nouvelle écriture</>
+   
+  {{ form(form) }}
+  
+{% endblock %}

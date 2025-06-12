@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Euros index{% endblock %}
+
+{% block body %}
+    <h1>Budgets</h1>
+    <div class="row">
+    
+    <div class="col col-3">
+    <table class="table table-sm table-hover col-3">
+    <thead>
+            <tr>
+               <th>budget</th>
+                <th>credit</th>
+                <th>debit</th>
+                <th>solde</th>
+                </tr>
+        </thead>
+        <tbody>
+        {% for annuel in annuels %}
+            <tr>
+               <td><a href='http://localhost:8000/euros/budgets/{{annuel[0][1]}}/janvier{{annuel[0][1]}}'>{{ annuel[0].1 }}</a></td>
+                <td>{{ annuel[0].credit }}</td>
+                <td>{{ annuel[0].debit }}</td>
+                <td>{{ annuel[0].solde|number_format(2) }}</td>
+                </tr>
+         {% endfor %}
+         </tbody>
+       </table>
+    </div>
+    
+    <div class="col col-3">
+    <table class="table table-sm table-hover col-3">
+    <thead>
+            <tr>
+               <th>budget</th>
+                <th>credit</th>
+                <th>debit</th>
+                <th>solde</th>
+                </tr>
+        </thead>
+        <tbody>
+        {% for mensuel in mensuels %}
+            <tr>
+               <td><a href="http://localhost:8000/euros/budgets/{{year}}/{{mensuel[0].budget}}">{{mensuel[0].budget}}</a></td>
+                <td>{{ mensuel[0].credit }}</td>
+                <td>{{ mensuel[0].debit }}</td>
+                <td>{{ mensuel[0].solde }}</td>
+                </tr>
+        {% endfor %}
+        </tbody>
+       </table>
+    </div>
+    
+    {% include 'partials/detail.html.twig' %}
+      
+    </div>
+
+{% endblock %}
